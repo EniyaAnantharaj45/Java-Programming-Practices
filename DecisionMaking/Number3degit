@@ -1,0 +1,21 @@
+package DicisionMaking;
+
+import java.util.Scanner;
+
+public class number3degit {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in) ;
+		System.out.println("enter the number..");
+		int num=sc.nextInt();	
+		
+		int number=325;
+		 if(num>=100&&num<=999) {
+			 System.out.println("the number is 3 degit");
+		 }else {
+				  System.out.println("the number is not 3 degit" );
+		
+	}
+
+	}
+}
+
