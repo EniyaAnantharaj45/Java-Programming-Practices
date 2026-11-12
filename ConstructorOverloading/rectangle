@@ -1,0 +1,37 @@
+package com.org.constructorOverloading;
+
+public class Rectangle {
+	int length;
+	int width;
+	//default constructor
+Rectangle(){
+	length=3;
+	width=4;
+}
+	//one arguments
+	Rectangle(int side){
+	this.length=side;
+	width=side;
+
+}
+	//two argument constructor
+	Rectangle(int l,int w){
+		this.length=l;
+		this.width=w;
+	}
+	void display() {
+		System.out.println("length="+length);
+		System.out.println("width="+width);
+	}
+	public static void main(String[] args) {
+		Rectangle r1=new Rectangle();
+		Rectangle r2=new Rectangle(2);
+
+		Rectangle r3=new Rectangle(2,5);
+	
+		r1.display();
+		r2.display();
+		r3.display();
+
+	}
+}
