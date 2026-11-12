@@ -1,0 +1,22 @@
+package com.org.Wrapperclassdemostration;
+
+public class DemoInteger {
+	public static void main(String[] args) {
+		int a=10;
+		
+		Integer b=new Integer(a);
+		
+		Integer c=Integer.valueOf(a);
+		
+		System.out.println(c);
+		
+		Integer y=new Integer(30);
+		System.out.println(y);
+		
+		Integer x=Integer.valueOf(30);
+		System.out.println(x);
+		
+		
+	}
+
+}
