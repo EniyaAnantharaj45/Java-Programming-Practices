@@ -1,0 +1,13 @@
+package com.org.DownCasting;
+
+public class dog extends Animal {
+	public void bark() {
+		System.out.println("barking...");
+	}
+
+	public void roar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
