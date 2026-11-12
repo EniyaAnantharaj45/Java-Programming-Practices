@@ -1,0 +1,15 @@
+package com.org.Hasademonstration;
+
+public class DriverCar {
+	public static void main(String[]args) {
+	 car c1=new car("audi","r8",1200000);
+	 c1.displaycarInfo();
+	 c1.Startcar();
+	 
+	 c1.accelerate();
+	 
+	 c1.stopcar();
+		
+	}
+
+}
