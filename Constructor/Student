@@ -1,0 +1,47 @@
+package com.org.constructor;
+
+public class Student {
+	int Sid;
+	String name;
+	int age;
+	char grade;
+	
+	Student(int id, String name, int age, char grade){
+		Sid=3169;
+		name="priya";
+		age=24;
+		grade='A';
+		
+	}
+	
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+	void display() {
+		System.out.println("student id"+Sid);
+        System.out.println("student name"+name);
+        System.out.println("student age"+age);
+        System.out.println("student grade"+grade);
+		
+	}
+public static void main(String[] args) {
+	
+	Student s1=new Student();
+	s1.display();
+	
+	System.out.println("====================");
+               		
+	Student s2=new Student(4,"Harshith",24,'B');
+	s2.display();
+	
+	System.out.println("=====================");
+	
+	Student s3=new Student(1,"Harshith",24,'B');
+	s3.display();
+	
+	Student s4=new Student(1,"Harshith",24,'B');
+	s4.display();
+	
+}
+}
