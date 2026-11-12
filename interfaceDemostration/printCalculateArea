@@ -1,0 +1,6 @@
+package com.org.interfacedemostration;
+
+public interface PrintcalculateArea {
+	 void displayArea(String ShapeName,double Area);
+
+}
