@@ -1,0 +1,49 @@
+package com.org.Inhertance;
+
+
+class Animal {
+    String name;
+    int age;
+
+    Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void eat() {
+        System.out.println("Animal is eating");
+    }
+}   // <-- Animal class inga mudiyum
+
+class Mammal extends Animal {
+    double bodyTemperature;
+
+    Mammal(String name, int age, double bodyTemperature) {
+        super(name, age);
+        this.bodyTemperature = bodyTemperature;
+    }
+
+    public void walk() {
+        System.out.println("Mammal is walking");
+    }
+}
+
+class Dog extends Mammal {
+    String breed;
+
+    Dog(String name, int age, double bodyTemperature, String breed) {
+        super(name, age, bodyTemperature);
+        this.breed = breed;
+    }
+
+    public void bark() {
+        System.out.println("Dog is barking");
+    }
+
+    public void display() {
+        System.out.println("Animal Name: " + name);
+        System.out.println("Animal Age: " + age);
+        System.out.println("Body Temperature: " + bodyTemperature);
+        System.out.println("Breed: " + breed);
+    }
+}
