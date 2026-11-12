@@ -1,0 +1,49 @@
+package com.org.constructorOverloading;
+
+public class Laptop {
+	String Brand;
+	int RAM;
+	int Storage;
+	
+	Laptop(){
+		Brand="Vivo";
+		RAM=8;
+		Storage=128;
+	}
+	Laptop(String Brand){
+		this.Brand=Brand;
+		RAM=RAM;
+		Storage=Storage;
+	}
+	Laptop(String Brand,int RAM){
+		this.Brand=Brand;
+		this.RAM=RAM;
+		Storage=Storage;
+
+}
+	Laptop(String Brand,int RAM,int price){
+		this.Brand=Brand;
+		this.RAM=RAM;
+		this.Storage=Storage;
+	}
+	void display() {
+		System.out.println("Brand="+Brand);
+		System.out.println("RAM="+RAM);
+		System.out.println("Storage="+Storage);
+		
+	}
+	public static void main(String[] args) {
+		Laptop L1=new Laptop();
+		Laptop L2=new Laptop("oppo");
+		Laptop L3=new Laptop("oppo",12);
+		Laptop L4=new Laptop("oppo",12,25000);
+		
+	}
+	L1.display();
+	L2.display();
+	L3.display();
+	L4.display();
+	}
+}
+
+
