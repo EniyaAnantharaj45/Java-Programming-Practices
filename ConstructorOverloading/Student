@@ -1,0 +1,54 @@
+package com.org.constructorOverloading;
+
+public class Student {
+	String name;
+	int age;
+	char grade;
+	
+
+//default constructor
+Student(){
+	name="vijay";
+	age=12;
+	grade='A';
+}	
+
+//one parameter constructor
+ Student(String name){
+	 this.name=name;
+	 age=age;
+	 grade=grade;
+ } 
+ //two parameter constructor
+	 Student(String name,int age){
+		 this.name=name;
+		 this.age=age;
+		 grade=grade;
+	 }	 
+//three parameter constructor
+		 Student(String name,int age,char grade){
+			 this.name=name;
+			 this.age=age;
+			 this.grade=grade;
+		 }
+		 
+		 void display() {
+			 System.out.println("name"+name);
+			 System.out.println("age"+age);
+			 System.out.println("grade"+grade);
+		 }
+public static void main(String[] args) {
+	  Student s1=new Student();
+	  Student s2=new Student("Dhanush");
+	  Student s3=new Student("Dhanush",23);
+	  Student s4=new Student("Dhanush",23,'A');
+	  
+	s1.display();
+	s2.display();
+	s3.display();
+	s4.display();
+}
+		 }
+
+		 
+		 
