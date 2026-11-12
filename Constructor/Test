@@ -1,0 +1,19 @@
+package com.org.constructor;
+
+public class Test {
+	static int y;
+	static {
+		great();    //mathod call statement
+		y=20;       //intializing global static variable
+		int x=10;    //declare and initializion of local variable
+		Test t1=new Test();
+	}
+	static void great() {
+		System.out.println("Hello");
+	}
+	public static void main(String[]args) {
+		
+		System.out.println("I main Method");
+	}
+
+}
