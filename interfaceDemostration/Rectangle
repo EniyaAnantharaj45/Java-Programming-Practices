@@ -1,0 +1,10 @@
+package com.org.interfacedemostration;
+
+public abstract class Rectangle implements Shape,PrintcalculateArea{
+	public double calculatArea(double length,double breadth) {
+		return length*breadth;
+	}
+public void displayArea(String shapeName,double area) {
+	System.out.println("The Area calculated for"+shapeName+"is:");
+}
+}
