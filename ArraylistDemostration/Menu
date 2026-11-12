@@ -1,0 +1,144 @@
+package com.org.Arraylistdemostration;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.ListIterator;
+public class Menu {
+	public static void main(String[] args) {
+		ArrayList<String>southIndianDish=new ArrayList<String>();
+		southIndianDish.add("dosa");
+		southIndianDish.add("pori");
+		southIndianDish.add("idli");
+		
+		System.out.println(southIndianDish);
+		
+		ArrayList<String>northIndianDish=new ArrayList<String>();
+		northIndianDish.add("chole Bhature");
+		northIndianDish.add("Butter Chicken");
+		northIndianDish.add("Butter Naan");
+		
+		System.out.println("North Indian Cuisines");
+		System.out.println(northIndianDish);
+		ArrayList<String>menu=new ArrayList<String>();
+		
+		System.out.println("menu:");
+		menu.addAll(southIndianDish);
+		menu.addAll(northIndianDish);
+		System.out.println(menu);
+		
+		System.out.println(menu.contains("pizza"));
+		ArrayList<String>westerncuisine=new ArrayList<String>();
+		westerncuisine.add("pizza");
+		westerncuisine.add("pazta");
+		westerncuisine.add("buger");
+		System.out.println(menu.containsAll(westerncuisine));
+		
+		System.out.println("==========================");
+		System.out.println("FirstDish:"+menu.getFirst());
+		System.out.println("LastDish:"+menu.getLast());
+		System.out.println("dish at target index:"+menu.get(2));
+		System.out.println("===============================");
+		menu.addAll(westerncuisine);
+		System.out.println(menu);
+		
+		menu.set(6,"maggie");
+		System.out.println(menu);
+		
+		System.out.println("idli is at the index:"+menu.indexOf("Dosa"));
+		System.out.println("apple");
+		
+		ArrayList<String>alpha=new ArrayList<String>();
+		alpha.add("A");
+		alpha.add("B");
+		alpha.add("C");
+		alpha.add("D");
+		System.out.println(alpha.lastIndexOf("C"));
+		
+		
+		alpha.remove("B");//remove through element
+		System.out.println(alpha);
+		alpha.remove(3);//remove through index
+		System.out.println(alpha);
+		
+		ArrayList<String>fruits=new ArrayList<String>();
+		fruits.add("Mango");
+		fruits.add("Apple");
+		fruits.add("orange");
+		fruits.add("graps");
+		fruits.add("Watermelon");
+		
+		System.out.println(fruits);
+		
+		ArrayList<String>dislike=new ArrayList<String>();
+		dislike.add("Apple");
+		dislike.add("graps");
+		
+		fruits.removeAll(dislike);
+		System.out.println(fruits);
+		
+		ArrayList<String>dis=new ArrayList<String>();
+		dis.add("Mango");
+		dis.add("Watermelon");
+		
+		fruits.retainAll(dis);
+		System.out.println(fruits);
+		
+		System.out.println(fruits.size());
+		System.out.println(fruits.isEmpty());
+		
+		fruits.clear();
+		System.out.println(fruits.size());
+		System.out.println(fruits.isEmpty());
+		
+		
+		Object[]ar=alpha.toArray();
+		System.out.println(Arrays.toString(ar));
+		
+		String[]arr=alpha.toArray(new String[1]);
+		System.out.println(Arrays.toString(arr));
+		
+		for(int i=0;i<menu.size();i++) {
+			System.out.println(menu.get(i)+" ");
+		}
+		
+		
+		for(String e1:menu) {
+			System.out.println(e1);
+		}
+		
+		menu.forEach(value->System.out.println(value));
+		menu.forEach(System.out::println);
+		System.out.println("=========================");
+		
+		Iterator<String>itr=menu.iterator();
+		
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+			
+		}
+		System.out.println("ListIterator for forward traversal");
+		ListIterator<String> ltr1=menu.listIterator();
+		
+		while(ltr1.hasNext());
+		System.out.println(ltr1.next());
+		
+		menu.forEach(value->System.out.println(value));
+		menu.forEach(System.out::println);
+	}	
+	private ArrayList<String>menu;	
+		
+	
+	System.out.println("ListIterator for backward traversal");
+	ListIterator<String> ltr2=menu.listIterator(menu.size());
+	while(ltr2.hasprevious());
+	System.out.println(ltr2.previous());
+}
+		
+		
+				
+				
+				
+		
+	}
+	
