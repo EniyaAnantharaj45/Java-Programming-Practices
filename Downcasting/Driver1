@@ -1,0 +1,25 @@
+package com.org.DownCasting;
+
+public class Driver1 {
+	public static void main(String[]args) {
+		//up-casted scenario
+		Animal a1=new Tiger();
+		a1.eating();
+		 //down casting   
+		Tiger t1=(Tiger)a1;
+		t1.roar();
+		Animal a2=new dog();
+		a2.eating();
+		dog d=(dog) a2;
+		d.bark();
+		if(a1 instanceof dog) {
+			dog d1=(dog)a1;
+			
+			d1.eating();
+			d1.bark();
+		}else {
+			System.out.println("Illegal Downcaste Operation");
+		}
+		
+	}
+}
