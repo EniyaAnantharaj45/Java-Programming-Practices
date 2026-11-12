@@ -1,0 +1,64 @@
+package com.org.constructor;
+
+//blueprint
+
+public class pizzaBuilder {
+
+	//properties
+	String Size;
+	String Sauce;
+	String crust;
+	String Topping;
+	
+ //no argument parameter
+	//zero constructor
+	public pizzaBuilder() {
+		Size="regular";
+		Sauce="Tomato";
+		crust="thick";
+		Topping="none";
+		
+	}
+	//constructor with partial  
+	
+	public pizzaBuilder(String size) {
+		this.Size="regular";
+		Sauce="Tomato";
+		crust="Thick";
+        Topping="none";
+	}
+       
+        public pizzaBuilder(String Size,String Sauce) {
+        	this.Size=Size;
+    		this.Sauce="Tomato";
+    		crust="Thick";
+            Topping="none";
+        }
+        
+         public pizzaBuilder(String Size,String Sauce,String crust) {
+            	this.Size=Size;
+        		this.Sauce="Tomato";
+        		this.crust="Thick";
+                Topping="none";
+         }        
+          public pizzaBuilder(String Size,String Sauce,String crust,String Topping) {
+                	this.Size=Size;
+            		this.Sauce="Tomato";
+            		this.crust="Thick";
+                    this.Topping="none";
+                
+          
+
+     }
+         
+        
+        public void display() {
+        System.out.println("pizzaBuilder"+Size);
+        System.out.println("pizzaBuilder"+Sauce);
+        System.out.println("pizzaBuilder"+crust);
+        System.out.println("pizzaBuilder"+Topping);
+
+	
+	}
+}
+        
