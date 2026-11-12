@@ -1,0 +1,29 @@
+package DicisionMaking;
+
+import java.util.Scanner;
+public class CheckOddOrEven {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int n=sc.nextInt();
+	
+		
+		int num=40;
+		if(num<0) {
+			System.out.println("the number is possitive");
+		}else if(num%2==0) {
+			System.out.println("the number is not possitive");
+		}else {
+			System.out.println("thenumber is Null");
+		
+			
+			if(num>0) {
+				System.out.println("the number is negative");
+			}else {
+				System.out.println("the number is not negative");
+			}
+			}
+	}
+}
+
+
