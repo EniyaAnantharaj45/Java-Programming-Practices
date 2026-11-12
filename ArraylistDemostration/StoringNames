@@ -1,0 +1,33 @@
+package com.org.Arraylistdemostration;
+
+import java.util.ArrayList;
+
+public class StoringNames {
+	
+	public static void main(String[] args) {
+		ArrayList<String>names=new ArrayList<String>();
+		names.add("Kishore");
+		names.add("Yokesh");
+		names.add("siva");
+		names.add("Dharshini");
+		names.add("Snega");
+		//calling tostring explicity
+		//System.out.println(names.toString());
+		//implicity to string called
+		System.out.println(names);
+		
+		names.add(0,"moni");
+		System.out.println(names);
+		
+		names.addFirst("hari");
+		System.out.println(names);
+		
+		names.addLast("priya");
+		System.out.println(names);
+		
+		
+		
+		
+	}
+
+}
