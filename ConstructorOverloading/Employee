@@ -1,0 +1,50 @@
+package com.org.constructorOverloading;
+
+public class Employee {
+		int eid;
+		String ename;
+		int eSalary;
+
+		
+		public Employee() {
+			eid=108;
+			ename="moni";
+			eSalary=20000;
+		}		
+		//parameterized constructor
+		public Employee(int id,String name,int salary) {
+			
+		    this.eid=id;
+		    this.ename=name;
+		    this.eSalary=eSalary;
+		}
+		
+		
+		void display(){
+			System.out.println("Employee id"+eid);
+			System.out.println("Employee name"+ename);
+			System.out.println("Employee salary"+eSalary);
+			
+			
+		
+	        }		
+			public static void main(String[] args) {
+				
+			
+			Employee e1=new Employee(2,"Harshith",8000);
+			System.out.println("========================");
+		    Employee e2=new Employee(4,"Yokesh",13000);
+			 System.out.println("=========================");
+			  
+			  Employee e3=new Employee(2,"hari",23000);
+			  System.out.println("===========================");
+			}
+			e1.display();
+			e2.display();
+			e3.display();
+		}
+	}
+			
+
+	        
+
