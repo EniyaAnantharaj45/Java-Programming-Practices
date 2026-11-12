@@ -1,0 +1,18 @@
+package com.org.Objectclassdemostration;
+
+class Bemo{
+	public String toString() {
+        return"Hello Word";
+	}
+}
+public class demo{
+		public static void main(String[]args) {
+		Bemo b=new Bemo();
+		System.out.println(b.toString());
+		
+		}
+
+	}
+
+
+
