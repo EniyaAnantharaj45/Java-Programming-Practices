@@ -1,0 +1,28 @@
+package com.org.encapsulaton;
+
+public class BankAccountDriver {
+	public static void main(String[]args) {
+		BankAccount ac1=new BankAccount();
+        ac1.displayInfo();
+		
+		
+		System.out.println("===================");
+		System.out.println("After update");
+		ac1.setAccountNumber(2864756);
+		ac1.setgetHoldername("simbu");
+		ac1.setBalance(2000.0);
+		ac1.displayInfo();
+		System.out.println("====================");
+		
+		//deposit
+		ac1.deposit(300);
+		ac1.displayInfo();
+		System.out.println("=====================");
+		//withdraw
+		ac1.withdraw(3000);
+		ac1.displayInfo();
+		
+		
+	}
+
+}
