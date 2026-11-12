@@ -1,0 +1,28 @@
+package com.org.arrays;
+
+import java.util.Scanner;
+public class OneDmensionArray {
+	public static void main(String[]args){
+		
+		Scanner sc=new Scanner(System.in);
+		//array size
+		System.out.println("Enter the arrays:");
+		int n=sc.nextInt();
+		int[]arr=new int[n];
+		
+		//read the elements
+		for(int i=0;i<n;i++) {
+		 arr[i]=sc.nextInt();
+		 
+		 System.out.println("Enter the read elements:");
+		} 
+		 //print the elements
+		 for(int i=0;i<n;i++) {
+		 System.out.println(arr[i]+" ");
+		   
+		
+		 
+		 sc.close();
+		}
+	}
+}
