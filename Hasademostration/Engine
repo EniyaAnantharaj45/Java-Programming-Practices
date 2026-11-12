@@ -1,0 +1,76 @@
+package com.org.Hasademonstration;
+
+class Engine {
+	int hp;
+	double torque;
+	String fuelType;
+	String engineType;
+	public Engine(int hp, double torque, String fuelType, String engineType) {
+		super();
+		this.hp = hp;
+		this.torque = torque;
+		this.fuelType = fuelType;
+		this.engineType = engineType;
+	}
+public Engine(int i) {
+		// TODO Auto-generated constructor stub
+	}
+public void startEngine() {
+	System.out.println("Engine started.....brummmmmmmmmmmmmmm");
+	
+}
+public void stopEngine() {
+	System.out.println("Engine stoped..............");
+}
+public void displayEngineInfo() {
+	System.out.println("Engine Hp:"+hp);
+	System.out.println("Torque:"+torque);
+	System.out.println("Fuel Type:"+fuelType);
+	System.out.println("Engine Type:"+engineType);
+	
+}
+}
+ class car {
+	//container for the part object
+	Engine e=new Engine(2000,300.3,"petrol","v12");
+	String brand;
+	String model;
+	double price;
+	public car(String brand, String model, double price) {
+		super();
+		this.brand = brand;
+		this.model = model;
+		this.price = price;
+	}
+	
+	public void accelerate() {
+		System.out.println("car is a accelerateting.....");
+	}
+	public void Startcar() {
+		e.startEngine();
+		System.out.println("car started....");
+	}
+	public void stopcar() {
+		e.stopEngine();
+		System.out.println("car stopped.....");
+	}
+	public void displaycarInfo() {
+		System.out.println("car Brand:"+brand);
+		System.out.println("car model:"+model);
+        System.out.println("car price:"+price);
+        e.displayEngineInfo();
+
+		
+		
+	}
+
+	public void displaycarInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+		
+	
+	
+}
+
+
