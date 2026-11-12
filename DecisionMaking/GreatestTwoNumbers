@@ -1,0 +1,23 @@
+package DicisionMaking;
+import java.util.Scanner;
+public class GreatestTwoNumbers {
+	public static void main(String[]args) {
+		int num1=13;
+		int num2=26;
+		if(num1<num2) {
+			System.out.println(num1+" is the greatest number");
+		}else if(num2>num1) {
+			System.out.println(num2+"is the the greatest number");
+		}else {
+			System.out.println("both number are equal");
+		}
+				
+		Scanner sc=new Scanner(System.in);
+	
+		int num=sc.nextInt();
+		
+
+		
+	}
+
+}
