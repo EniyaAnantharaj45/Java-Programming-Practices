@@ -1,0 +1,11 @@
+package com.org.interfacedemostration;
+
+public class Circle implements Shape,PrintcalculateArea {
+	public double calculateArea(double pi,double radius) {
+    return pi*radius;
+}
+	public void displayArea(String ShapeName,double area) { 
+		System.out.println("The Area calculated for"+ShapeName+"is:");
+	}
+	}
+
