@@ -1,0 +1,25 @@
+package DicisionMaking;
+
+import java.util.Scanner;
+public class Triangle {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("The Traingle name");
+		
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		
+		if(a==b&&b==c) {
+			System.out.println("the is equilateral Traingle..");
+		}else if(a==b||b==c||c==a) {
+			System.out.println("the  isosceles Triangle");
+		}else {
+			System.out.println("the is scalene Traingle"); 
+			
+		}
+	}
+	
+	
+
+}
