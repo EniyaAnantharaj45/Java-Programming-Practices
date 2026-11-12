@@ -1,0 +1,17 @@
+package com.org.Inhertance;
+
+public class AnimalDriver{
+	class Inheritance {
+	    public static void main(String[] args) {
+
+	        Dog.d1 = new Dog("Rocky", 5, 37.5, "Labrador");
+
+	        d1.display();
+	        d1.eat();
+	        d1.walk();
+	        d1.bark();
+	    }
+	}
+
+}
+	
