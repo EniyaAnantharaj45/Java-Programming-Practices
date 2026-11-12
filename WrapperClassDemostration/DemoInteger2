@@ -1,0 +1,14 @@
+package com.org.Wrapperclassdemostration;
+
+public class DemoInteger2 {
+	public static void main(String[] args) {
+		//Boxing
+		Integer num=Integer.valueOf(20);
+		System.out.println(num.getClass().getName());
+		
+		//un-Boxing
+		int a=num.intValue();
+		System.out.println(a);
+	}
+
+}
