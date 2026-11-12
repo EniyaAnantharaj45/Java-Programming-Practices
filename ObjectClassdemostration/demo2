@@ -1,0 +1,29 @@
+package com.org.Objectclassdemostration;
+
+class Student {
+	String name;
+	int id;
+	int age;
+
+	public Student(String name, int id, int age) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.age = age;
+	}
+
+	public String tostring() {
+		return "[Name:" + name + "Age:" + age + "ID:" + id + "]";
+	}
+
+	public class demo2 {
+		public static void main(String[] args) {
+			Student s1 = new Student("pawan", 24, 65);
+			Student s2 = new Student("moni", 34, 25);
+			System.out.println(s1.tostring());
+			
+
+		}
+
+	}
+}
