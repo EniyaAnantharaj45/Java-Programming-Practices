@@ -1,0 +1,39 @@
+package com.org.isademoStration;
+
+
+class Dog {
+	String name;
+	int Age;
+	Dog(String name,int age){
+		this.name=name;
+		this.Age=age;
+	}
+	public void eat() {
+		System.out.println("milk");
+		
+	}
+	public void sleep() {
+		System.out.println("Dog is sleeping");
+		
+	}
+}
+class Animal extends Dog {
+	Animal(String name, int age) {
+		super(name, age);
+		this.breed=breed;
+
+	}
+
+	String breed;
+	Animal(String name,int age,String breed){
+        super(name,age);
+        this.breed=breed;
+	
+}
+
+public void bark() {
+	System.out.println("dog is Barks....");
+	
+}
+
+}
