@@ -1,0 +1,15 @@
+package com.org.Hasademonstration;
+
+public class BookDriver {
+	public static void main(String[]args) {
+		Author a1=new Author("Dennis Ritche");
+		Book b1=new Book(a1,"programming in c",1200.50);
+		b1.display();
+		
+		System.out.println("===============================");
+		Author a2=new Author("chetan Bhagat");
+		Book b2=new Book(a2,"Three point something",820);
+		b2.display();
+	}
+
+}
