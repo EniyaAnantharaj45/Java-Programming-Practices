@@ -1,0 +1,8 @@
+package com.org.MethodOverriding;
+
+public class Animal {
+ public void makesound() {
+	 System.out.println("Animal make sound");
+	
+}
+}
