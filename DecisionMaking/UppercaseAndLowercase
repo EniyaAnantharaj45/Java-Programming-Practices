@@ -1,0 +1,21 @@
+package DicisionMaking;
+import java.util.Scanner;
+ class UppercaseandLowercase {
+ public static void main(String[] args) {
+		 Scanner Sc=new Scanner(System.in);
+		 System.out.println("enter the letter");
+		 char ch=Sc.next().charAt(0); 
+	  
+	 char Ch='D';
+	 if(Character.isUpperCase(ch)) {
+	  System.out.println("the character is Uppercase");
+	 } else if(Character.isUpperCase(ch)){
+		 System.out.println("the character is lowercase");
+	 }else{
+		 System.out.println("the charcter is not a letter");
+	 }
+			  
+			  
+}
+
+}
