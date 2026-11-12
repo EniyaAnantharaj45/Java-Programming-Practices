@@ -1,0 +1,20 @@
+package com.org.constructor;
+
+public class EmployeeDriver {
+	public static void main(String[] args) {
+		
+	
+	Employee e1=new Employee(12,"hari",20000);
+	e1.display();
+		System.out.println("===============");
+	
+
+     Employee e2=new Employee(16,"priya",5000);
+	e2.display();
+	
+	}
+}
+	
+	
+
+
