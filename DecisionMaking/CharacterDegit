@@ -1,0 +1,17 @@
+package DicisionMaking;
+
+import java.util.Scanner;
+
+public class characterDegit {
+	Scanner sc=new Scanner(System.in) ;
+	
+	char ch=sc.next().charAt(0);
+	
+	if(ch<='0'&&ch>='9') {
+			 System.out.println("the letter is character degit");
+	}else {
+		System.out.println("the letter is not character degit");
+	}
+
+}
+}
