@@ -1,0 +1,22 @@
+package DicisionMaking;
+import java.util.Scanner;
+public class PossitiveOrNegative {
+	public static void main(String[]args) {
+		
+	
+	Scanner sc=new Scanner(System.in);
+		
+		 System.out.println("Enter the Number:");
+		 int num=sc.nextInt();
+
+	if(num<15) {
+		System.out.println("number is possitive");
+	}else if(num<20){
+		System.out.println("number is negative");
+	}else {
+		System.out.println("zero");
+	sc.close();
+
+}
+}
+}
