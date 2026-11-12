@@ -1,0 +1,72 @@
+package com.org.encapsulaton;
+
+public class BankAccount {
+	private long accountNumber;
+	private String holdername;
+	private double balance;
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(long accountNumber) {
+		if(accountNumber<=0) {
+			System.out.println();
+		}else {
+		this.accountNumber = accountNumber;
+		}
+	}
+	
+	public String getHoldername() {
+		return holdername;
+	}
+	
+	public void setgetHoldername(String Holdername) {
+		if(holdername.isEmpty()||holdername==null) {
+			System.out.println("Invalidname");
+		}else {
+		 this.holdername=holdername;
+	}
+	}
+	public double getBalance() {
+		return balance;
+	}
+	
+	public void setBalance(double balance) {
+		if(balance<=0) {
+			System.out.println("Invalid amount....");
+		}else {
+		this.balance = balance;
+		}
+	}
+ 
+	//deposit action
+	public void deposit(double amount) { 
+		
+		if(amount>0) {
+			balance+=amount;
+		}else {
+			System.out.println("Invalid Amount...cannot be added");
+		}
+	}
+
+	//withdraw action
+	public double withdraw(double amount) {
+		if(amount>0&& amount<=balance) {
+			balance-=amount;
+		}else {
+			System.out.println("Invalid Amount or Insufficent Balance);");
+		}
+	return getBalance();
+		
+	}
+	public void displayInfo() {
+		System.out.println("Account Number:"+accountNumber);
+		System.out.println("Account Holder:"+holdername);
+		System.out.println("Account Balance:"+balance);
+	}
+
+		
+		
+	}
+
+	 
+  
